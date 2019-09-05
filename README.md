@@ -4,21 +4,19 @@
 
 
 # SigPloit
-SigPloit a signaling security testing framework dedicated to Telecom Security professionals and reasearchers to pentest and exploit vulnerabilites in the signaling protocols used in mobile operators regardless of the geneartion being in use.
-SigPloit aims to cover all used protocols used in the operators interconnects SS7, GTP (3G), Diameter (4G) or even SIP for IMS and VoLTE infrastructures used in the access layer and SS7 message encapsulation into SIP-T.
-Recommendations for each vulnerability will be provided to guide the tester and the operator the steps that should be done to enhance their security posture
+SigPloit - система тестирования безопасности сигнализации, предназначенная для профессионалов и исследователей Telecom Security для тестирования и использования уязвимостей в протоколах сигнализации, используемых мобильными операторами, независимо от того, какое поколение используется. SigPloit стремится охватить все используемые протоколы, используемые в межсоединениях операторов SS7, GTP (3G), Diameter (4G) или даже SIP для инфраструктур IMS и VoLTE, используемых на уровне доступа, и инкапсуляции сообщений SS7 в SIP-T. Будут предоставлены рекомендации для каждой уязвимости, которые помогут тестеру и оператору предпринять шаги, которые необходимо предпринять для повышения уровня безопасности.
 
-SigPloit is developed on several versions
+SigPloit разработан на нескольких версиях
 
-Note: In order to test SS7 attacks, you need to have an SS7 access or you can test in the virtual lab with the provided server sides of the attacks, the used values are provided.
+Примечание. Чтобы протестировать атаки SS7, вам необходимо иметь доступ SS7, или вы можете протестировать в виртуальной лаборатории с предоставленными серверными сторонами атак, при этом используются используемые значения.
 
-For brief intro on SigPloit and Telecom Architecture in general please <a href="https://github.com/SigPloiter/SigPloit/wiki/1--Welcome-to-SigPloit">click here </a>
+Для краткого введения в SigPloit и телекоммуникационную архитектуру в целом, пожалуйста, <a href="https://github.com/SigPloiter/SigPloit/wiki/1--Welcome-to-SigPloit">нажмите здесь </a>
 
-SigPloit is referenced in GSMA document FS.07 "SS7 and Sigtran Network Security"
+На SigPloit имеется ссылка в документе GSMA FS.07 «SS7 и безопасность сети Sigtran»
 
   Version 1: SS7
   -------------
-  SigPloit will initially start with SS7 vulnerabilities providing the messages used to test the below attacking scenarios
+  SigPloit изначально будет начинаться с уязвимостей SS7, предоставляя сообщения, используемые для тестирования следующих атак
   
     A- Location Tracking
     
@@ -28,32 +26,32 @@ SigPloit is referenced in GSMA document FS.07 "SS7 and Sigtran Network Security"
   
   Version 2: GTP
   ------------
-  This Version will focus on the data roaming attacks that occur on the IPX/GRX interconnects.
+  Эта версия будет посвящена атакам роуминга данных, которые происходят на межсоединениях IPX/GRX.
   
   Version 3: Diameter
   -----------------
-  This Version will focus on the attacks occurring on the LTE roaming interconnects using Diameter as the signaling protocol.
+  Эта версия будет сосредоточена на атаках, происходящих на роуминговых межсетевых соединениях LTE, использующих Diameter в   качестве протокола сигнализации.
   
   Version 4: SIP
   ------------
-  This is Version will be concerned with SIP as the signaling protocol used in the access layer for voice over LTE(VoLTE) and IMS infrastructure.
-  Also, SIP will be used to encapsulate SS7 messages (ISUP) to be relayed over VoIP providers to SS7 networks taking advantage of SIP-T protocol, a protocol extension for SIP to provide intercompatability between VoIP and SS7 networks
+  Эта версия будет касаться SIP как протокола сигнализации, используемого на уровне доступа для передачи голоса по LTE (VoLTE) и инфраструктуры IMS.
+  Кроме того, SIP будет использоваться для инкапсуляции сообщений SS7 (ISUP), которые будут ретранслироваться через провайдеров VoIP в сети SS7, используя преимущества протокола SIP-T, расширения протокола для SIP, чтобы обеспечить совместимость между сетями VoIP и SS7.
   
   Version 5: Reporting
   ------------------
-  This last Version will introduce the reporting feature. A comprehensive report with the tests done along with the recommendations provided for each vulnerability that has been exploited.
+  Эта последняя версия представит функцию отчетности. Подробный отчет с проведенными тестами и рекомендациями для каждой уязвимости, которая была использована.
   
     BETA Version of SigPloit will have the Location Tracking attacks of the SS7 phase 1
 
-## Installation and requirements
-The requirements for this project are:
+## Установка и требования
+Требования для этого проекта:
 
     1) Python 2.7
     2) Java version 1.7 +
     3) sudo apt-get install lksctp-tools
     4) Linux machine
 
-To run use
+Запустить и использовать:
 
     cd SigPloit
     

@@ -1,4 +1,4 @@
-# List of Contributors
+# Список авторов
 - Rosalia D'Alessandro
 - Ilario Dal Grande
 
